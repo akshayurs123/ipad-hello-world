@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E34D2269C24446AA96E16048 /* HelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3231F68BF471793086EDE /* HelloWorldApp.swift */; };
 		D98A394558B24091B912084C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87679E8343594B65824C4BA4 /* ContentView.swift */; };
+		1158781925FF4869866D4DDF /* CustomerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B852C13624ADC816EA419 /* CustomerListView.swift */; };
+		8486BF6BFE00474DA3B1A558 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9866422D94D179D2DF0F9 /* DeviceListView.swift */; };
+		6ACA2DE5CA8B399DF5EB3C46 /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D317AB65A372957EEA846C9 /* DeviceInfoView.swift */; };
 		4A65590A74E148FD9DA47441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5207B53A05084BE999A20D6C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -16,6 +19,9 @@
 		F0CDC452797440DC96FFC161 /* HelloWorldiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3231F68BF471793086EDE /* HelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldApp.swift; sourceTree = "<group>"; };
 		87679E8343594B65824C4BA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		345B852C13624ADC816EA419 /* CustomerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListView.swift; sourceTree = "<group>"; };
+		8BA9866422D94D179D2DF0F9 /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		3D317AB65A372957EEA846C9 /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
 		5207B53A05084BE999A20D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD72E0771B448E78B7DB8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +58,9 @@
 			children = (
 				CFF3231F68BF471793086EDE /* HelloWorldApp.swift */,
 				87679E8343594B65824C4BA4 /* ContentView.swift */,
+				345B852C13624ADC816EA419 /* CustomerListView.swift */,
+				8BA9866422D94D179D2DF0F9 /* DeviceListView.swift */,
+				3D317AB65A372957EEA846C9 /* DeviceInfoView.swift */,
 				5207B53A05084BE999A20D6C /* Assets.xcassets */,
 				9DD72E0771B448E78B7DB8BC /* Info.plist */,
 			);
@@ -129,6 +138,9 @@
 			files = (
 				D98A394558B24091B912084C /* ContentView.swift in Sources */,
 				E34D2269C24446AA96E16048 /* HelloWorldApp.swift in Sources */,
+				1158781925FF4869866D4DDF /* CustomerListView.swift in Sources */,
+				8486BF6BFE00474DA3B1A558 /* DeviceListView.swift in Sources */,
+				6ACA2DE5CA8B399DF5EB3C46 /* DeviceInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +270,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5XBXK2FB23;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = HelloWorldiPad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -270,7 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.HelloWorldiPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = ipados;
+				SUPPORTED_PLATFORMS = "iphoneos ipados";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -285,7 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5XBXK2FB23;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = HelloWorldiPad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -297,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.HelloWorldiPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = ipados;
+				SUPPORTED_PLATFORMS = "iphoneos ipados";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
