@@ -115,10 +115,24 @@ struct DeviceInfoView: View {
 
     private func sendReboot() async {
         rebootStatus = .loading
-        // TODO: replace with real reboot API endpoint when available
-        // e.g. POST /iclock/api_v1/devices/{sn}/reboot
-        try? await Task.sleep(nanoseconds: 1_500_000_000)
-        rebootStatus = .failure("API not available")
+        let urlString = "https://zkcirrus-1.workdayclocks.com/iclock/api_v1/devices/\(device.deviceSn)/reboot"
+        guard let url = URL(string: urlString) else {
+            rebootStatus = .failure("Invalid URL")
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        do {
+            let (_, response) = try await URLSession.shared.data(for: request)
+            let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
+            if (200..<300).contains(statusCode) {
+                rebootStatus = .success
+            } else {
+                rebootStatus = .failure("Error \(statusCode)")
+            }
+        } catch {
+            rebootStatus = .failure(error.localizedDescription)
+        }
     }
 }
 
